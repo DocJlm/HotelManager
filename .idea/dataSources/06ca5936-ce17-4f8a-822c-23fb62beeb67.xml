@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="hotel@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <ServerVersion>8.0.39</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="hotel">
+      <Current>1</Current>
+      <IntrospectionTimestamp>2024-12-04.21:35:24</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-12-04.05:35:24</LocalIntrospectionTimestamp>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="school"/>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="test"/>
+    <table id="9" parent="2" name="admin">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="10" parent="2" name="roomtype">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="11" parent="9" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="12" parent="9" name="name">
+      <Comment>登录账户</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="13" parent="9" name="pwd">
+      <Comment>登录密码</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="14" parent="9" name="lasttime">
+      <Comment>最后登录时间&#xd;
+</Comment>
+      <DasType>datetime|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="15" parent="9" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="16" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="17" parent="10" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="18" parent="10" name="type">
+      <Comment>类型名称</Comment>
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="19" parent="10" name="price">
+      <Comment>房型价格</Comment>
+      <DasType>int|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="20" parent="10" name="deposit">
+      <Comment>押金</Comment>
+      <DasType>int|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="21" parent="10" name="bednum">
+      <Comment>床位数</Comment>
+      <DasType>int|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="22" parent="10" name="remark">
+      <Comment>备注</Comment>
+      <DasType>varchar(255)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <index id="23" parent="10" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
